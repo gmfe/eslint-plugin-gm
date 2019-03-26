@@ -1,0 +1,29 @@
+{
+  "name": "eslint-plugin-desw",
+  "version": "0.0.1",
+  "description": "myrule",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "desw",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "requireindex": "~1.1.0"
+  },
+  "peerDependencies": {
+    "chai": "^5.x"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "mocha": "^3.1.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
