@@ -1,13 +1,17 @@
 {
-  "name": "eslint-plugin-desw",
+  "name": "eslint-plugin-gm",
   "version": "0.0.1",
-  "description": "myrule",
+  "description": "",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "desw",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gmfe/eslint-plugin-gm.git"
+  },
+  "author": "gmfe",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
@@ -16,14 +20,11 @@
     "requireindex": "~1.1.0"
   },
   "peerDependencies": {
-    "chai": "^5.x"
+    "eslint": "^5.x"
   },
   "devDependencies": {
     "eslint": "^5.15.3",
-    "mocha": "^3.1.2"
-  },
-  "engines": {
-    "node": ">=0.10.0"
+    "mocha": "^6.0.2"
   },
   "license": "ISC"
 }
