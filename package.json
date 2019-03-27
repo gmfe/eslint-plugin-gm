@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-gm",
+  "name": "eslint-plugin-gmfe",
   "version": "0.0.1",
   "description": "",
   "keywords": [
@@ -9,15 +9,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:gmfe/eslint-plugin-gm.git"
+    "url": "git@github.com:gmfe/eslint-plugin-gmfe.git"
   },
   "author": "gmfe",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "requireindex": "~1.1.0"
+    "create-eslint-index": "^1.0.0",
+    "import-modules": "^1.1.0"
   },
   "peerDependencies": {
     "eslint": "^5.x"

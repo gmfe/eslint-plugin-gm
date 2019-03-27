@@ -1,6 +1,4 @@
-# eslint-plugin-myrule
-
-myrule
+# eslint-plugin-gmfe
 
 ## Installation
 
@@ -10,41 +8,43 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-myrule`:
+Next, install `eslint-plugin-gmfe`:
 
 ```
-$ npm install eslint-plugin-myrule --save-dev
+$ npm install eslint-plugin-gmfe --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-myrule` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-gmfe` globally.
 
 ## Usage
 
-Add `myrule` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+添加配置到 `.eslintrc` 
 
+- 方式一 使用全部 recommended 规则
 ```json
 {
-    "plugins": [
-        "myrule"
+    "extends": [
+        "plugin:gmfe/recommended"
     ]
 }
 ```
 
-
-Then configure the rules you want to use under the rules section.
+- 方式二 单独使用规则
 
 ```json
 {
+    "plugins":[
+        "gmfe"
+    ],
     "rules": {
-        "myrule/rule-name": 2
+        "gmfe/no-implict-lodash-each-return": "error",
     }
 }
 ```
 
-## Supported Rules
+### 规则列表
 
-* Fill in provided rules here
-
+`no-implict-lodash-each-return` _.each/forEach 回调只允许使用块级函数体语法，并且不包含 return 语句 或 `return` `return true` `return false`
 
 
 

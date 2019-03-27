@@ -1,5 +1,5 @@
 const RuleTester = require('eslint').RuleTester
-const rule = require('../../../lib/rules/myrule')
+const rule = require('../../../lib/rules/no-implict-lodash-each-return')
 
 const ruleTester = new RuleTester({
   parserOptions: {
@@ -7,7 +7,6 @@ const ruleTester = new RuleTester({
     "sourceType": "module",
   }
 })
-
 
 const cases = {
     valid: [
