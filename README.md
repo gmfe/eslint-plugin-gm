@@ -20,7 +20,7 @@ $ npm install eslint-plugin-gmfe --save-dev
 
 添加配置到 `.eslintrc` 
 
-- 方式一 使用全部 recommended 规则
+- 方式一：使用全部 recommended 规则
 ```json
 {
     "extends": [
@@ -29,7 +29,7 @@ $ npm install eslint-plugin-gmfe --save-dev
 }
 ```
 
-- 方式二 单独使用规则
+- 方式二：单独使用规则
 
 ```json
 {
