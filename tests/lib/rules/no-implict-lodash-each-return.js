@@ -212,4 +212,4 @@ const cases = {
     ]
   }
 
-ruleTester.run('test rule', rule, cases)
+ruleTester.run('no-implict-lodash-each-return', rule, cases)
