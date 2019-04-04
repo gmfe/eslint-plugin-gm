@@ -18,11 +18,14 @@
   },
   "dependencies": {
     "create-eslint-index": "^1.0.0",
-    "eslint-plugin-gm": "^1.2.2",
     "import-modules": "^1.1.0"
   },
   "peerDependencies": {
-    "eslint": "^5.x"
+    "eslint": "^5.x",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-jsx": "^6.0.2",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "^5.15.3",
