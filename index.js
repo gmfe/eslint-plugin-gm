@@ -9,12 +9,13 @@ const recommendedRules = createIndex.createConfig({
 
 module.exports = {
   rules,
-  configs: {    
+  configs: {
     recommended: {
       parser: 'babel-eslint',
       extends: [
         'standard',
         'standard-jsx',
+        'plugin:react/recommended'
       ],
       rules: {
         'react/jsx-tag-spacing': ['error', {'beforeSelfClosing': 'never'}],
