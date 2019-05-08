@@ -14,6 +14,12 @@ const ruleTester = new RuleTester({
 ruleTester.run('no-deprecated-react-gm', rule, {
   valid: [{
     code: '<MoreSelect />'
+  }, {
+    code: '<Popover />'
+  }, {
+    code: '<div className="gm-text-12"/>'
+  }, {
+    code: '<div className={className("gm-text-12", {"gm-text-12": true})} />'
   }],
   invalid: [{
     code: '<SearchSelect />',
@@ -27,5 +33,8 @@ ruleTester.run('no-deprecated-react-gm', rule, {
   }, {
     code: '<Trigger />',
     errors: [{ messageId: 'comTrigger' }]
+  }, {
+    code: '<div className="gm-font-5" />',
+    errors: [{ messageId: 'class_gm-font-x' }]
   }]
 })
