@@ -19,6 +19,7 @@ module.exports = {
       ],
       rules: {
         'react/jsx-tag-spacing': ['error', { 'beforeSelfClosing': 'never' }],
+        'react/no-find-dom-node': 0,
         'camelcase': 0,
         ...recommendedRules
       },
