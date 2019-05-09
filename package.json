@@ -14,16 +14,13 @@
   "author": "gmfe",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests --recursive",
-    "postinstall": "node install.js"
+    "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
     "create-eslint-index": "^1.0.0",
     "import-modules": "^1.1.0",
     "jsx-ast-utils": "^2.1.0",
-    "package-json": "^6.3.0",
-    "semver": "^6.0.0"
+    "package-json": "^6.3.0"
   },
   "peerDependencies": {
     "eslint": "5.x",
