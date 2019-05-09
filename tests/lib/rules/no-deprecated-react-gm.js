@@ -34,6 +34,9 @@ ruleTester.run('no-deprecated-react-gm', rule, {
     code: '<Trigger />',
     errors: [{ messageId: 'comTrigger' }]
   }, {
+    code: '<Dropper />',
+    errors: [{ messageId: 'comDropper' }]
+  }, {
     code: '<div className="gm-font-5" />',
     errors: [{ messageId: 'class_gm-font-x' }]
   }]
