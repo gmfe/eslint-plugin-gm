@@ -21,7 +21,7 @@ module.exports = {
         'react/display-name': 0,
         'react/jsx-tag-spacing': ['error', { 'beforeSelfClosing': 'never' }],
         'react/no-find-dom-node': 0,
-        'react/prop-types': [2, { ignore: ['children', 'location', 'params'] }],
+        'react/prop-types': [2, { ignore: ['children', 'location', 'params', 'match'] }],
         'camelcase': 0,
         ...recommendedRules
       },
