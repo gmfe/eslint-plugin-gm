@@ -15,7 +15,9 @@ module.exports = {
       extends: [
         'standard',
         'standard-jsx',
-        'plugin:react/recommended'
+        'plugin:react/recommended',
+        'plugin:import/errors',
+        'plugin:import/warnings'
       ],
       rules: {
         'react/display-name': 0,
