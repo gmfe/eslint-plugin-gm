@@ -2,10 +2,13 @@ const createIndex = require('create-eslint-index')
 const importModules = require('import-modules')
 const rules = importModules('lib/rules', { camelize: false })
 
-const recommendedRules = createIndex.createConfig({
-  plugin: 'gmfe',
-  field: 'meta.docs.recommended'
-}, rules)
+const recommendedRules = createIndex.createConfig(
+  {
+    plugin: 'gmfe',
+    field: 'meta.docs.recommended'
+  },
+  rules
+)
 
 module.exports = {
   rules,
@@ -16,18 +19,22 @@ module.exports = {
         'standard',
         'standard-jsx',
         'plugin:react/recommended',
-        'plugin:import/errors',
-        'plugin:import/warnings'
+        'prettier',
+        'prettier/react',
+        'prettier/standard'
       ],
+      plugins: ['gmfe', 'prettier'],
       rules: {
+        'prettier/prettier': 'error',
+        ...recommendedRules,
         'react/display-name': 0,
-        'react/jsx-tag-spacing': ['error', { 'beforeSelfClosing': 'never' }],
         'react/no-find-dom-node': 0,
-        'react/prop-types': [2, { ignore: ['children', 'location', 'params', 'match'] }],
-        'camelcase': 0,
-        ...recommendedRules
+        'react/prop-types': [
+          2,
+          { ignore: ['children', 'location', 'params', 'match'] }
+        ],
+        camelcase: 0
       },
-      plugins: ['gmfe'],
       settings: {
         react: {
           version: 'detect'

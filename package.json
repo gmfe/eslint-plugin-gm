@@ -1,10 +1,9 @@
 {
   "name": "eslint-plugin-gmfe",
-  "version": "0.2.8",
+  "version": "1.0.0",
   "description": "",
   "keywords": [
     "eslint",
-    "eslintplugin",
     "eslint-plugin"
   ],
   "repository": {
@@ -17,32 +16,39 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
+    "lodash": "4.x",
     "create-eslint-index": "^1.0.0",
     "import-modules": "^1.1.0",
-    "jsx-ast-utils": "^2.1.0",
-    "package-json": "^6.3.0"
+    "jsx-ast-utils": "^2.1.0"
   },
   "peerDependencies": {
-    "eslint": "5.x",
-    "lodash": "4.x",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-config-standard-jsx": "^6.0.2",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-react": "^7.12.0",
-    "babel-eslint": "^10.0.1"
-  },
-  "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.3.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-standard-jsx": "^6.0.2",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-standard": "^4.0.0",
-    "lodash": "^4.17.11",
-    "mocha": "^6.0.2"
+    "prettier": "^1.18.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-jsx": "^6.0.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.0.2",
+    "prettier": "^1.18.2"
   },
   "license": "ISC"
 }
