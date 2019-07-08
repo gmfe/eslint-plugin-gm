@@ -19,6 +19,8 @@ module.exports = {
         'standard',
         'standard-jsx',
         'plugin:react/recommended',
+        'plugin:import/warnings',
+        'plugin:import/errors',
         'prettier',
         'prettier/react',
         'prettier/standard'
