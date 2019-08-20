@@ -35,6 +35,10 @@ module.exports = {
           2,
           { ignore: ['children', 'location', 'params', 'match'] }
         ],
+        'import/no-unresolved': [
+          2,
+          { ignore: ['^gm-i18n$'] }
+        ],
         camelcase: 0
       },
       settings: {
