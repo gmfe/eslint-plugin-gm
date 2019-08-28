@@ -44,7 +44,8 @@ module.exports = {
       settings: {
         react: {
           version: 'detect'
-        }
+        },
+        'import/resolver': 'webpack'
       }
     }
   }
