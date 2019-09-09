@@ -1,51 +1,30 @@
 # eslint-plugin-gmfe
 
-## Installation
-
-You'll first need to install [ESLint](http://eslint.org):
-
 ```
-$ npm i eslint --save-dev
+npm i eslint --save-dev
+npm i eslint-plugin-gmfe --save-dev
 ```
 
-Next, install `eslint-plugin-gmfe`:
+or
 
 ```
-$ npm install eslint-plugin-gmfe --save-dev
+yarn add eslint --save-dev
+yarn add eslint-plugin-gmfe --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-gmfe` globally.
+然后根据提示按照剩余依赖，目前是
 
-## Usage
+```
+yarn add babel-eslint eslint-cofnig-prettier eslint-config-standard eslint-config-standart-jsx eslint-import-resolver-webpack eslint-plugin-import eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise eslint-plugin-react eslint-plugin-standard prettier -D
+```
 
-添加配置到 `.eslintrc` 
+配置 .eslintrc.js
 
-- 方式一：使用全部 recommended 规则
-```json
-{
-    "extends": [
-        "plugin:gmfe/recommended"
-    ]
+```
+module.exports = {
+  'extends': [
+    'plugin:gmfe/recommended'
+  ]
 }
+
 ```
-
-- 方式二：单独使用规则
-
-```json
-{
-    "plugins":[
-        "gmfe"
-    ],
-    "rules": {
-        "gmfe/no-implict-lodash-each-return": "error",
-    }
-}
-```
-
-### 规则列表
-
-`no-implict-lodash-each-return` _.each/forEach 回调只允许使用块级函数体语法，并且不包含 return 语句 或 `return` `return true` `return false`
-
-
-
-
