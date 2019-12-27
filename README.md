@@ -12,7 +12,7 @@ yarn add eslint --save-dev
 yarn add eslint-plugin-gmfe --save-dev
 ```
 
-然后根据提示按照剩余依赖，目前是
+然后根据提示安装 peerDependencies
 
 ```
 yarn add babel-eslint eslint-config-prettier eslint-config-standard eslint-config-standard-jsx eslint-import-resolver-webpack eslint-plugin-import eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise eslint-plugin-react eslint-plugin-standard prettier -D

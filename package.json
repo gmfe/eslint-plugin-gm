@@ -11,46 +11,48 @@
     "url": "git+https://github.com/gmfe/eslint-plugin-gmfe.git"
   },
   "author": "gmfe",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "test": "mocha tests --recursive"
   },
   "dependencies": {
     "create-eslint-index": "^1.0.0",
-    "import-modules": "^1.1.0",
-    "jsx-ast-utils": "^2.2.1",
+    "import-modules": "^2.0.0",
+    "jsx-ast-utils": "^2.2.3",
     "lodash": "^4.17.14",
-    "mocha": "^6.2.0"
+    "mocha": "^6.2.2"
   },
   "peerDependencies": {
     "babel-eslint": "^10.0.2",
-    "eslint": "^6.0.1",
-    "eslint-config-prettier": "^6.0.0",
+    "eslint": "^6.7.0",
+    "eslint-config-prettier": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-config-standard-jsx": "^8.1.0",
     "eslint-import-resolver-gmfe-alias": "^0.0.2",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-standard": "^4.0.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.19.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
-    "eslint": "^6.0.1",
-    "eslint-config-prettier": "^6.0.0",
+    "eslint": "^6.7.0",
+    "eslint-config-prettier": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-config-standard-jsx": "^8.1.0",
     "eslint-import-resolver-gmfe-alias": "^0.0.2",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-standard": "^4.0.0",
-    "prettier": "^1.18.2"
-  },
-  "license": "ISC"
+    "prettier": "^1.19.1"
+  }
 }
